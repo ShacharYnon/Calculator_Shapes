@@ -1,9 +1,10 @@
-from shape import *
+from .shape import Shape
+
 import math
 
 class Hexagon(Shape):
-    def __init__(self ,side_length):
-        super().__init__(self)
+    def __init__(self ,side_length:float ,name:str = 'Hexagon'):
+        super().__init__(name)
         self.side_length = side_length
 
     def get_area(self):

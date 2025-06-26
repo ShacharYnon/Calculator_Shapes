@@ -1,10 +1,11 @@
-from shape import *
+from .shape import Shape
+
 
 
 class Rectangle(Shape):
 
-    def __init__(self ,length ,width ):
-        super().__init__(self)
+    def __init__(self ,length:float ,width:float ,name:str = 'Rectangle' ):
+        super().__init__(name)
         self.length = length
         self.width = width
 

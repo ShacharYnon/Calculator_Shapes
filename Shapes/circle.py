@@ -1,9 +1,9 @@
-from shape import *
+from .shape import Shape
 import math
 
 class Circle(Shape):
 
-    def __init__(self ,name :str,radius :float):
+    def __init__(self ,radius :float ,name :str = 'Circle'):
         super().__init__(name)
         self.radius = radius
 

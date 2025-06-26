@@ -1,9 +1,10 @@
-from shape import *
+from .shape import Shape
+
 import math
 
 class Square(Shape):
 
-    def __init__(self ,name :str, side:float):
+    def __init__(self ,side:float ,name:str = 'Square'):
         super().__init__(name)
         self.side = side
 
